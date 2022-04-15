@@ -1,0 +1,60 @@
+<template>
+  <div id="app">
+    <site-menu :userName="userName" class="site_menu"></site-menu>
+    <!-- <main-page></main-page> -->
+    <!-- <user-profile :userName="userName" class="user_profile"></user-profile> -->
+    <write-book class="write-book"></write-book>
+  </div>
+</template>
+
+<script>
+// import MainPage from '@/components/MainPage'
+import SiteMenu from '@/components/SiteMenu'
+// import UserProfile from '@/components/UserProfile'
+import WriteBook from '@/components/WriteBook'
+
+export default {
+  components: {
+    // MainPage,
+    SiteMenu, 
+    // UserProfile, 
+    WriteBook,
+  },
+  data() {
+    return {
+      userName: 'usweeboy',
+    }
+  },
+  methods: {
+  },
+}
+</script>
+
+<style lang="scss">
+* { margin: 0; padding: 0; text-decoration: none; font-size: 1em; outline: none; }
+code, kbd, samp, pre, tt, var, textarea, input, select, isindex, listing, xmp, plaintext { 
+font: inherit; font-size: 1em; white-space: normal; }
+dfn, i, cite, var, address, em { font-style: normal; }
+th, b, strong, h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a, img, a img, iframe, form, fieldset, abbr, acronym, object, applet, table {
+border: none;}
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td, center { text-align: left; vertical-align: top; }
+body { line-height: 1; background: white; color: black; }
+q { quotes: "" ""; }
+ul, ol, dir, menu { list-style: none; }
+sub, sup { vertical-align: baseline; }
+a { color: inherit; }
+hr { display: none; } /* we don't need a visual hr in layout */
+/* disables some nasty font attributes in standard browsers */
+font { color: inherit !important; font: inherit !important; color: inherit !important; } 
+marquee { overflow: inherit !important; -moz-binding: none; }
+blink { text-decoration: none; }
+nobr { white-space: normal; }
+.user_profile{
+  padding-top: 20px;
+}
+.write-book{
+  padding-top: 20px;
+}
+</style>
