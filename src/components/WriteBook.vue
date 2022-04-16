@@ -1,4 +1,5 @@
 <template>
+  <!-- <site-menu /> -->
   <div id="WriteBook">
 
     <div class="write_book_blocks container">
@@ -43,9 +44,11 @@
 
 <script>
 import colorPicker from '@caohenghu/vue-colorpicker'
+// import SiteMenu from './SiteMenu.vue'
 export default {
   components: {
-      colorPicker
+      colorPicker,
+      // SiteMenu
   },
   data() {
       return {

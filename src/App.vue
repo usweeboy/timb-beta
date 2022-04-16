@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <site-menu :userName="userName" class="site_menu"></site-menu>
+    <router-view></router-view>
+
     <!-- <main-page></main-page> -->
     <!-- <user-profile :userName="userName" class="user_profile"></user-profile> -->
-    <write-book class="write-book"></write-book>
+    <!-- <write-book class="write-book"></write-book> -->
   </div>
 </template>
 
@@ -11,14 +13,14 @@
 // import MainPage from '@/components/MainPage'
 import SiteMenu from '@/components/SiteMenu'
 // import UserProfile from '@/components/UserProfile'
-import WriteBook from '@/components/WriteBook'
+// import WriteBook from '@/components/WriteBook'
 
 export default {
   components: {
     // MainPage,
     SiteMenu, 
     // UserProfile, 
-    WriteBook,
+    // WriteBook,
   },
   data() {
     return {

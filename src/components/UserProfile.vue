@@ -1,4 +1,5 @@
 <template>
+  <!-- <site-menu /> -->
   <div id="Profile">
     <div class="user_profile container">
       <div class="user_info">
@@ -76,7 +77,9 @@
 
 
 <script>
+// import SiteMenu from './SiteMenu.vue'
 export default {
+  // components: { SiteMenu },
   props: {
     userName: {
       type: String
